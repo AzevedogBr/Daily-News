@@ -5,10 +5,12 @@ class AppWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      // set your initial route
+      debugShowCheckedModeBanner: false,
       initialRoute: "/",
       navigatorKey: Modular.navigatorKey,
-      // add Modular to manage the routing system
+      theme: ThemeData(
+        appBarTheme: AppBarTheme(color: Colors.deepOrange)
+      ),
       onGenerateRoute: Modular.generateRoute,
     );
   }

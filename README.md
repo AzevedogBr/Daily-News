@@ -2,15 +2,21 @@
 
 A new Flutter application.
 
-## Getting Started
+## André Azevedo
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+Esse projeto foi desenvolvido com o intuito de buscar as noticias da [Api Hack News] (https://github.com/HackerNews/API))
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Foram usados os seguintes packages para melhorar o desenvolvimento:
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+[Dio] Responsável por gerênciar as requisições para o servidor.
+[Mobx] Responsável por fazer o gerênciamento de estado da aplicação.
+[Flutter_modular] Responsável por fazer o gerênciamento das rotas e injeção de dependências.
+[Shared_preferences] Responsável por fazer a persistência dos dados.
+[Intl] Tratamento de conversão para timestamp.
+
+
+## Com um pouco mais de tempo farias alguns ajustes, tanto na estruturação dos controllers, como na persistência de dados,
+## visto que hoje temos outras soluções mais estáveis como o Hive.
+
+
