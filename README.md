@@ -4,6 +4,7 @@ A new Flutter application.
 
 ## André Azevedo
 
+Donwload ApK: https://github.com/AzevedogBr/Daily-News/blob/master/apk/app-debug.apk
 
 Esse projeto foi desenvolvido com o intuito de buscar as noticias do grupo Boticário [Api] (https://gb-mobile-app-teste.s3.amazonaws.com/data.json)
 
