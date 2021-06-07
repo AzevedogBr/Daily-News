@@ -17,7 +17,7 @@ Foram usados os seguintes packages para melhorar o desenvolvimento:
 [Intl] Tratamento de conversão para timestamp.
 
 
-## Com um pouco mais de tempo farias alguns ajustes, tanto na estruturação dos controllers, como na persistência de dados,
-## visto que hoje temos outras soluções mais estáveis como o Hive.
+# Com um pouco mais de tempo farias alguns ajustes, tanto na estruturação dos controllers, como na persistência de dados,
+# visto que hoje temos outras soluções mais estáveis como o Hive.
 
 
