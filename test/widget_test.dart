@@ -1,4 +1,4 @@
-import 'package:daily_news/app/module/home/home_page.dart';
+import 'package:daily_news/app/modules/home/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
