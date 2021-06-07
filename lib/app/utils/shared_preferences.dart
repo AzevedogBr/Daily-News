@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:shared_preferences/shared_preferences.dart';
 
 class SharedService {
@@ -5,32 +7,35 @@ class SharedService {
 
   SharedService(this._prefs);
 
-  Future<void> setFavorite(String value) async {
-    try {
-      final pref = await _prefs;
-      if (pref.containsKey('listFavorites')) {
-        await pref?.clear();
-      }
-
-      pref?.setString('listFavorites', value);
-    } catch (e) {
-      rethrow;
-    }
-  }
-
-  Future<String> getFavorite() async {
-    print(hashCode);
+  Future<String> getLogin(String key) async {
     try {
       final prefs = await _prefs;
-      String list = prefs.getString('listFavorites');
-      return list;
+      var login = prefs.getString(key);
+      return login;
     }
     catch (e) {
       rethrow;
     }
   }
 
-  Future<void> clean() async {
+
+  save(String key, value) async {
+    final pref = await _prefs;
+    pref.setString(key, json.encode(value));
+  }
+
+  read(String key) async {
+    final prefs = await _prefs;
+    return json.decode(prefs.getString(key));
+  }
+
+
+  remove(String key) async {
+    final prefs = await _prefs;
+    prefs.remove(key);
+  }
+
+  Future<void> cleanAll() async {
     try {
       final prefs = await _prefs;
       await prefs.clear();

@@ -5,7 +5,7 @@ A new Flutter application.
 ## André Azevedo
 
 
-Esse projeto foi desenvolvido com o intuito de buscar as noticias da [Api Hack News] (https://github.com/HackerNews/API))
+Esse projeto foi desenvolvido com o intuito de buscar as noticias do grupo Boticário [Api] (https://gb-mobile-app-teste.s3.amazonaws.com/data.json)
 
 Foram usados os seguintes packages para melhorar o desenvolvimento:
 
